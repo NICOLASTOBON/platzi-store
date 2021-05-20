@@ -9,6 +9,13 @@ git:
   depth: 3
 script:
   - yarn build
+notifications:
+  email:
+    recipients:
+      - nicolas.tobon009@hotmail.com
+      - nico.tobon009@hotmail.com
+    on_success: always
+    on_failure: always
 deploy:
   provider: pages
   skip-cleanup: true
